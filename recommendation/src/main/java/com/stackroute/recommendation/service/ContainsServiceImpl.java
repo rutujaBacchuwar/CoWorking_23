@@ -39,9 +39,9 @@ public class ContainsServiceImpl implements ContainsService {
     }
 
     @Override
-    public Collection<Space> recommendationprice() throws ArrayIndexOutOfBoundsException {
-        ArrayList<Double> list =containsRepository.getPrice();
-        ArrayList<String> list1=containsRepository.getCategoryName();
+    public Collection<Space> recommendationprice(String name) throws ArrayIndexOutOfBoundsException {
+        ArrayList<Double> list =containsRepository.getPrice(name);
+        ArrayList<String> list1=containsRepository.getCategoryName(name);
         System.out.println(list);
         System.out.println(list1);
         Collection<Space> collection=new ArrayList<>();
