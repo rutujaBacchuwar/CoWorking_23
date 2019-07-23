@@ -140,7 +140,7 @@ bookSpace(value): any{
     spaceId:this.arrayOfData.spaceId,
     spaceName:this.arrayOfData.spaceName,
     locationName:this.arrayOfData.location.locationName,
-    price:this.total,
+    totalprice:this.total,
     myCategory:this.selectedThing,
   }
     this.spaceService.saveBookingDetails(bookingSpace).subscribe();

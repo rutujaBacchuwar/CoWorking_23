@@ -49,10 +49,10 @@
                             <div *ngFor="let category of data.category">
                             <h5 class="card-title">&nbsp; &nbsp;<b>Category</b>: {{category.categoryName}}</h5>
                             </div>
-                            <h5 class="card-title">&nbsp; &nbsp;<b>Location</b> {{data.location.locationName}}</h5>
-                            <h5 class="card-title">&nbsp; &nbsp;<b>Price</b>: {{data.totalprice}}</h5>
-                            <h5 class="card-title">&nbsp; &nbsp;<b>From</b>: {{ArrayOfdetails[0].from}}</h5>
-                            <h5 class="card-title">&nbsp; &nbsp;<b>To</b>: {{ArrayOfdetails[0].to}}</h5>
+                            <h5 class="card-title">&nbsp; &nbsp;<b>Location</b> {{data.locationName}}</h5>
+                            <h5 class="card-title">&nbsp; &nbsp;<b>Price</b>: {{data.price}}</h5>
+                            <h5 class="card-title">&nbsp; &nbsp;<b>From</b>: {{data.startDate.split("T")[0]}}</h5>
+                            <h5 class="card-title">&nbsp; &nbsp;<b>To</b>: {{data.endDate.split("T")[0]}}</h5>
                             </div>
 
                     </div>
