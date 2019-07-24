@@ -36,8 +36,9 @@ export class AddPropertiesComponent implements OnInit {
       this.firstFormGroup = this._formBuilder.group({
          IdCtrl: ['', Validators.required],
         NameCtrl: ['', Validators.required],
-        HeightCtrl: ['', Validators.required],
-        WidthCtrl: ['', Validators.required]
+        LengthCtrl: ['', Validators.required],
+        BreadthCtrl: ['', Validators.required],
+        spaceImageUrlCtrl: ['', Validators.required]
  
      
  

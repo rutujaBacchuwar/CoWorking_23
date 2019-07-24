@@ -35,6 +35,8 @@ const routes: Routes = [
   {path: 'details/:spaceName', component:BookingComponent},
   {path: 'detail/:spaceName',component:ClientBookingComponent},
   {path: 'client-dashboard',component:ClientDashboardComponent},
+  {path: 'client-dashboard/:username',component:ClientDashboardComponent},
+
   // {path:'Profile',component:ClientProfileComponent}
 
   {path: 'pay', component:PaymentComponent},
@@ -44,7 +46,7 @@ const routes: Routes = [
 
 @NgModule({
   
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

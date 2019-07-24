@@ -26,15 +26,20 @@
 
                         <mat-form-field>
 
-                            <input matInput type="number" placeholder="Height" [(ngModel)]="Height" formControlName="HeightCtrl" required>
-                            <mat-hint>height of space in sq.m</mat-hint>
+                            <input matInput type="number" placeholder="Length" [(ngModel)]="Length" formControlName="LengthCtrl" required>
+                            <mat-hint>Length of space in sq.m</mat-hint>
                         </mat-form-field>&nbsp;
                         <mat-form-field>
 
-                            <input matInput type="number" placeholder="Width" [(ngModel)]="Width" formControlName="WidthCtrl" required>
-                            <mat-hint>Width of space in sq.m</mat-hint>
+                            <input matInput type="number" placeholder="Breadth" [(ngModel)]="Breadth" formControlName="BreadthCtrl" required>
+                            <mat-hint>Breadth of space in sq.m</mat-hint>
                         </mat-form-field>
                     </div>
+                    <mat-form-field>
+                            <input matInput placeholder="spaceImageUrl" [(ngModel)]="spaceImageUrl" formControlName="spaceImageUrlCtrl" required>
+    
+                        </mat-form-field>
+                       
 
                     <div class="next"><br><br><br><br><br><br><br><br><br><br><br>
                         <button mat-raised-button matStepperNext color="primary">Next</button><br><br><br><br><br><br>

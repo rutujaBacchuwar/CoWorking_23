@@ -36,7 +36,7 @@
                     <h5 class="fas fa-envelope"> &nbsp;&nbsp;{{ArrayOfOwnerData.emailId}}</h5>
                 </div>
                 <div class="iconmail">
-                        <h5 class="fas fa-envelope"> &nbsp;&nbsp;{{ArrayOfOwnerData.address}}</h5>
+                        <h5 class="fas fa-map-marker-alt"> &nbsp;&nbsp;{{ArrayOfOwnerData.address}}</h5>
                     </div>
 
             </div>
@@ -65,14 +65,14 @@
                                  
                             <h5 class="card-title">Space Name:{{a.spaceName}}</h5> 
                           
-                            <h5 class="card-title">Location:{{ a.location.locationName}}</h5>
+                            <h5 class="card-title">Location:{{ a.location.locationName}}</h5><br>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
+                                <!-- <li class="list-group-item"> -->
 
                                     <div class="rows1">
                                         <div class="row"  *ngFor = "let x of a.category">
-                                            <div class="card-subtitle mb-2 text-muted col-sm-6">{{x.categoryName}}</div>
-                                            <div class="col-sm-6">
+                                            <div class="card-subtitle mb-2 text-muted col-sm-7">{{x.categoryName}}</div>
+                                            <div class="col-sm-5">
                                               
                                                 <button type="button" class="btn btn-sm btn-success">{{x.status}}</button>
 

@@ -13,6 +13,7 @@
 
 
 <!--wrapper of space name and location-->
+<app-navbar></app-navbar>
 
 
 <div class="names">
@@ -218,7 +219,7 @@
                                       <h4 class="modal-title ">Booking</h4>
                                       <button type="button " class="close " data-dismiss="modal ">&times;</button>
                                     </div>
-
+                                   
                                   </div>
                                 </div>
                               </div>
@@ -564,6 +565,9 @@
 
   
 </div>
+<br>
+<br>
+<app-footer></app-footer>
 
 </html>
 
@@ -571,85 +575,3 @@
 
 
 
-<!-- <div class="modal fade" id="Modal1">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-
-        Modal Header
-        <div class="modal-header">
-          <h4 class="modal-title">Booking</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        Modal body
-        <div class="modal-body">
-          <div class="form-group">
-            <div class="row">
-              <div class="display" *ngFor="let b of selectedSpaces">
-                <div class="col-sm-3">
-                  <h4>SelectedSpaces</h4>
-                  <br> <br>
-                </div>
-                <div>
-                  <h6>Space Type:{{b.name}}</h6>
-                  <h6>Plans:{{b.rate}}</h6>
-                  <h6>Durations:{{b.count}}</h6>&nbsp;
-                </div>
-              </div>
-              <div class="col-md-10">
-                <label><b>Booking on</b></label>
-                <input type="date" name="" class="form-control" #date>
-              </div><br>
-
-              <div class="col-md-10">
-                <br> <label>From</label>
-                <input type="date" name="" class="form-control" [(ngModel)]="myVar1"
-                  (ngModelChange)="myStartDate()"><br>
-              </div>
-              <div class="col-md-10">
-                <label>To</label><br>
-                <input type="date" name="" class="form-control" [(ngModel)]="myVar2" (ngModelChange)="myEndDate()"><br>
-              </div>
-            </div>
-          </div>
-          <br>
-          <br>
-          <option *ngFor="let b of selectedSpaces"></option>
-          <input [(ngModel)]='num1' type="number" name='num1' placeholder="enter durations"><br><br>
-          <input [(ngModel)]='num2' type="number" name='num2' placeholder="cost">
-          <h1>{{result}}</h1>
-          <br><br>
-          <div row="btn">
-            <button (click)=" calc()" class="btn btn-dark w3-large">price </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-            <button (click)=" sum()" class="btn btn-dark w3-large">Total: </button>
-            <option *ngFor="let c of addCost">{{total}}</option>
-          </div>
-          <h2> {{total}}</h2>
-          <br>
-          <br>
-          <button (click)="bookSpace('total.value')" routerLink='/pay' routerLinkActive="active" type="button"
-            class="btn btn-secondary" data-dismiss="modal" ng-model="myVar">book</button>
-          <button (click)="bookSpace('total.value')" routerLink='/pay' routerLinkActive="active" type="button" class="btn btn-secondary" data-dismiss="modal" ng-model="myVar" >book</button>
-        </div>
-
-
-
-        <div class="modal fade " id="Modal ">
-          <div class="modal-dialog modal-dialog-centered modal-lg ">
-            <div class="modal-content ">
-              Modal Header
-              <div class="modal-header ">
-                <h4 class="modal-title ">Booking</h4>
-                <button type="button " class="close " data-dismiss="modal">&times;</button>
-              </div>
-              Modal footer
-              <div class="modal-footer">
-                <button routerLink='/pay' routerLinkActive="active" type="button" class="btn btn-secondary"
-                  data-dismiss="modal">Book</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->

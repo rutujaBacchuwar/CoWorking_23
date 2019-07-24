@@ -17,7 +17,7 @@ export class SpacesComponent implements OnInit {
   arrayOfCategory: any = [];
   array:any;
   imgurl: any;
-
+  username:any;
   loc:String;
   ngOnInit() {
     console.log(this.locationService.location);
@@ -39,8 +39,16 @@ export class SpacesComponent implements OnInit {
     console.log(this.arrayOfSpace);
     console.log("***************")
      console.log(spaceName);
-    this.router.navigateByUrl("details/"+spaceName);
+     this.username=sessionStorage.getItem('username');
+     console.log(this.username);
+     if(this.username!=null)
+      {
+     this.router.navigateByUrl("details/"+spaceName);
+      }
+      else
+      this.router.navigateByUrl("detail/"+spaceName);
+  }
  }
  
 
-}
+

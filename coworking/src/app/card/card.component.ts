@@ -41,6 +41,7 @@ export class CardComponent implements OnInit {
     // this.location=this.locationService.location;
     this.cardService.getByCategory(category).subscribe(data => {
     this.arrayOfCategory = data;
+    console.log(this.arrayOfCategory)
     
     });
   }
